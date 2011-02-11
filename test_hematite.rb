@@ -8,7 +8,6 @@ class TestHematite < Test::Unit::TestCase
       File.delete "test.rb" if File.exists? "test.rb"
       Hematite.new "test.hm"
       File.read "test.rb"
-      assert_equal File.size("test.hm"), File.size("test.rb")
     end
   end
 
